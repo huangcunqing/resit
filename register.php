@@ -29,6 +29,7 @@ class regist{
         }elseif($data->message=="Username has already been taken"){
             echo"<font color='red'>该名字已被注册，请重新填写名字！</font>";
         }
+        
         echo "<br>";
     }
 }
