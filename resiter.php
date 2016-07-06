@@ -7,8 +7,8 @@
  */
 namespace regist;
 class regist{
-    function reg($data){
-        $data["name"] ="john smith";
+    function reg($email,$password,$username,$name="user"){
+        $data = array("email"=>$email,"password"=>$password,"username"=>$username,"name"=>$name);
         $data_string = json_encode($data);
         $ch = curl_init('http://gitlab.local.com/api/v3/users?private_token=wyHczqs4m3Qmadxrx6it&SUDO=root');
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
