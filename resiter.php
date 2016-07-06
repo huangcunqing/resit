@@ -5,7 +5,7 @@
  * Date: 2016/7/5
  * Time: 11:31
  */
-namespace regist;
+namespace  huangcunqing\regist;
 class regist{
     function reg($email,$password,$username,$name="user"){
         $data = array("email"=>$email,"password"=>$password,"username"=>$username,"name"=>$name);
