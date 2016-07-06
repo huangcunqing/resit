@@ -5,7 +5,7 @@
  * Date: 2016/7/5
  * Time: 11:31
  */
-namespace regist\regist;
+namespace regist\register;
 class regist{
     function reg($data){
         $data["name"] ="john smith";
